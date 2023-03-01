@@ -1,0 +1,174 @@
+@import 'base/reset';
+@import 'base/global';
+@import 'modules/modules';
+
+$white: #ffffff;
+$gray: #EFEFEF;
+$accent: #66C05D;
+$dark: #333333;
+
+
+.promo {
+    color: $white;
+    background-color: $accent;
+
+    &__wrapper {
+        width: 1248px;
+        margin: 0 auto;
+        padding: 42px 69px 42px;
+        display: flex;
+        background-image: url(/assets/img/promo-bg.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 859px;
+    }
+
+    &__content {
+        align-self: center;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    &__text {
+        margin: 50px 0;
+        width: 308px;
+    }
+
+    &__link-more {
+        display: inline-block;
+        padding: 12px 45px;
+        border: 2px solid #FFFFFF;
+        border-radius: 40px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+    }
+
+    &__img {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+.offers {
+    padding: 80px 0 100px;
+
+    &__heading {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+        margin-bottom: 38px;
+    }
+}
+
+.offers__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 255px;
+    padding: 25px 30px;
+    background-color: $white;
+    text-align: center;
+
+    &__img {
+        margin: 0 auto;
+    }
+
+    &__heading {
+        margin: 20px 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    &__btn-buy {
+        display: block; 
+        margin: 0 auto;
+        padding: 9px 0;
+        width: 130px;
+        background-color: $accent;
+        border: none;
+        border-radius: 30px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+}
+
+.follow {
+    margin-bottom: 130px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        background-color: $accent;
+        color: $white;
+        width: 540px;
+        padding: 35px 0;
+        padding-left: 40px;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        margin-bottom: 25px;
+    }
+
+    &__email {
+        width: 225px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        border: none;
+        padding: 9px 25px;
+    }
+
+    &__email::placeholder {
+        color: #C4C4C4;
+        line-height: 16px;
+    }
+
+    &__map-link {
+        display: block;
+        width: 170px;
+        padding: 9px 0;
+        border: 2px solid #FFFFFF;
+        border-radius: 30px;
+        text-align: center;
+    }
+}
+
+.subscribe {
+    background-image: url(/assets/img/email.svg);
+}
+
+.our-shops {
+    background-image: url(/assets/img/truck.svg);
+}
+
+.follow__card {
+    background-repeat: no-repeat;
+    background-position: right 45px center;
+}
